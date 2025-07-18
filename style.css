@@ -297,4 +297,15 @@ main {
   #the-grid {
     background-image: url("assets/mobile/image-grid.jpg");
   }
+  .creation-card:hover {
+  transform:none;
+  opacity: 50%;
+  color: var(--white);
+  cursor: none;
+}
+.creation-card p {
+  max-width: 31%;
+  font-size: 1.5rem;
+  padding-left: 0;
+}
 }
