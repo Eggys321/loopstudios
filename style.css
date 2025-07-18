@@ -160,10 +160,14 @@ main {
   font-weight: 400;
   letter-spacing: 4px;
 }
-#div-for-creations button:hover {
+#div-for-creations #desktop-btn:hover {
   cursor: pointer;
   background-color: var(--black);
   color: var(--white);
+}
+
+#mobile-btn{
+  display: none;
 }
 /* Grid layout */
 #creations-grid {
@@ -194,7 +198,7 @@ main {
 }
 .creation-card p {
   max-width: 60%;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-left: 30px;
 }
 #deep-earth {
@@ -209,6 +213,31 @@ main {
 #the-grid {
   background-image: url("assets/desktop/image-grid.jpg");
 }
+#above-vr{
+  background-image: url("assets/desktop/image-from-above.jpg");
+}
+
+#pocket-borealis{
+  background-image: url("assets/desktop/image-pocket-borealis.jpg");
+}
+
+#the-curiosity{
+  background-image: url("assets/desktop/image-curiosity.jpg");
+}
+#fisheye{
+  background-image: url("assets/desktop/image-fisheye.jpg");
+}
+/* footer */
+footer{
+  background-color: var(--black);
+  padding: 50px 0;
+}
+
+#footer-inner{
+  /* border: 2px solid red; */
+  color: white;
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 1100px;
@@ -221,7 +250,7 @@ main {
   nav ul {
     display: none;
   }
-
+  
   #hamburger-icon-container {
     display: block;
     width: 10%;
@@ -229,12 +258,12 @@ main {
   #hamburger-icon-container img {
     width: 100%;
   }
-
+  
   #immersive {
     width: 100%;
     margin: 100px 0 0 0;
   }
-
+  
   #immersive h1 {
     width: 100%;
     font-size: 2.5rem;
@@ -263,12 +292,12 @@ main {
     padding-top: 20px;
     line-height: 1.6;
   }
-
+  
   /* section-2 */
   #section-2 {
     padding-top: 60px;
   }
-
+  
   #div-for-creations {
     justify-content: center;
   }
@@ -298,14 +327,30 @@ main {
     background-image: url("assets/mobile/image-grid.jpg");
   }
   .creation-card:hover {
-  transform:none;
-  opacity: 50%;
-  color: var(--white);
-  cursor: none;
-}
-.creation-card p {
-  max-width: 31%;
-  font-size: 1.5rem;
-  padding-left: 0;
-}
+    transform:none;
+    color: var(--white);
+    cursor: none;
+  }
+  .creation-card p {
+    max-width: 31%;
+    font-size: 1.3rem;
+    padding-left: 0;
+  }
+  #above-vr{
+    background-image: url("assets/mobile/image-from-above.jpg");
+  }
+  
+  #pocket-borealis{
+    background-image: url("assets/mobile/image-pocket-borealis.jpg");
+  }
+  
+  #the-curiosity{
+    background-image: url("assets/mobile/image-curiosity.jpg");
+  }
+  #fisheye{
+    background-image: url("assets/mobile/image-fisheye.jpg");
+  }
+  #mobile-btn{
+  display: block;
+}         
 }
