@@ -45,7 +45,7 @@ nav {
   padding: 60px 0;
 }
 
-nav ul {
+ ul {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -58,7 +58,7 @@ nav ul {
   display: none;
 }
 
-nav ul li {
+ ul li {
   position: relative;
   color: white;
   cursor: pointer;
@@ -66,7 +66,7 @@ nav ul li {
   padding: 0.25rem 0;
 }
 
-nav ul li::after {
+ ul li::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -78,7 +78,7 @@ nav ul li::after {
   transition: width 0.3s ease;
 }
 
-nav ul li:hover::after {
+ul li:hover::after {
   width: 50%;
 }
 
@@ -233,9 +233,38 @@ footer{
   padding: 50px 0;
 }
 
+#footer-logo-wrapper{
+  max-width: 200px;
+  padding-bottom: 20px;
+}
+
+#footer-logo-wrapper img{
+  width: 100%;
+}
+
 #footer-inner{
-  /* border: 2px solid red; */
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer-socials{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#footer-left{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+gap: 34px;
+justify-content: space-between;
+color: var(--grey);
+font-family: var(--ff-alata);
+font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -352,5 +381,26 @@ footer{
   }
   #mobile-btn{
   display: block;
-}         
+} 
+/* footer */
+#footer-inner{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}  
+footer ul{
+  display: block;
+  text-align: center;
+}
+footer ul li{
+ padding-bottom: 14px;
+}
+ul li:hover::after {
+  width: 0;
+}
+#footer-socials{
+  display: flex;
+  justify-content: center;
+  
+}      
 }
