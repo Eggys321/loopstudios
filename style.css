@@ -402,5 +402,10 @@ ul li:hover::after {
   display: flex;
   justify-content: center;
   
-}      
+} 
+#footer-socials{
+  
+  
+} 
+
 }
