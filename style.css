@@ -200,7 +200,7 @@ main {
   max-width: 60%;
   font-size: 1.5rem;
   padding-left: 30px;
-      font-weight: 300;
+  font-weight: 300;
 
 
 }
@@ -402,13 +402,9 @@ ul li:hover::after {
   width: 0;
 }
 #footer-socials{
-  display: flex;
   justify-content: center;
   
 } 
-#footer-socials{
-  
-  
-} 
+
 
 }
